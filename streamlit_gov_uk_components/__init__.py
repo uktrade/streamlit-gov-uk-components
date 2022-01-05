@@ -1,10 +1,10 @@
 import os
 import streamlit.components.v1 as components
 
-_DEV = not os.environ.get('DEV')
+_DEV = os.environ.get('GOV_UK_COMPONENTS_DEV')
 _component_options = {
     "url": "http://localhost:3001",
-} if _DEV else {
+} if GOV_UK_COMPONENTS_DEV else {
     "path": os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend_checkbox/build")
 }
 
