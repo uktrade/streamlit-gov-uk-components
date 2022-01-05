@@ -22,6 +22,7 @@ class GovUkCheckbox extends StreamlitComponentBase<State> {
         <div className="govuk-checkboxes__item">
           <input
             disabled={this.props.disabled}
+            defaultChecked={this.props.args["default"]}
             onInput={this.onInput}
             className="govuk-checkboxes__input"
             id={id} name={id}
