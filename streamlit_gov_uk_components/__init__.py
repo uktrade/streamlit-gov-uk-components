@@ -10,5 +10,5 @@ _component_options = {
 
 _gov_uk_checkbox= components.declare_component("gov_uk_checkbox", **_component_options)
 
-def gov_uk_checkbox(name, key=None):
-    return _gov_uk_checkbox(name=name, key=key, default=0)
+def gov_uk_checkbox(label, id, key=None):
+    return _gov_uk_checkbox(label=label, id=id, key=key, default=0)
