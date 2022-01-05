@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 
 _RELEASE = __name__ != '__main__'
 
-_gov_uk_checkbox_func = components.declare_component("gov_uk_components_checkbox",
+_gov_uk_checkbox= components.declare_component("gov_uk_components_checkbox",
     **({
         "path": os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend_checkbox/build")
     } if _RELEASE else {
@@ -12,7 +12,7 @@ _gov_uk_checkbox_func = components.declare_component("gov_uk_components_checkbox
 )
 
 def gov_uk_checkbox(name, key=None):
-    return _gov_uk_checkbox_func(name=name, key=key, default=0)
+    return _gov_uk_checkbox(name=name, key=key, default=0)
 
 if not _RELEASE:
     import streamlit as st
