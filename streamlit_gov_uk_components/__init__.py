@@ -8,7 +8,7 @@ _component_options = {
     "path": os.path.join(os.path.dirname(os.path.abspath(__file__)), "frontend_checkbox/build")
 }
 
-_gov_uk_checkbox= components.declare_component("gov_uk_components_checkbox", **_component_options)
+_gov_uk_checkbox= components.declare_component("gov_uk_checkbox", **_component_options)
 
 def gov_uk_checkbox(name, key=None):
     return _gov_uk_checkbox(name=name, key=key, default=0)
