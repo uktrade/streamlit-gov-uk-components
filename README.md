@@ -14,6 +14,7 @@ pip install streamlit-gov-uk-components
 ### Checkbox
 
 ```python
+import streamlit as st
 from streamlit_gov_uk_components import gov_uk_checkbox
 
 checked = gov_uk_checkbox(
