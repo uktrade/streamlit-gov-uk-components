@@ -13,6 +13,8 @@ pip install streamlit-gov-uk-components
 
 ### Checkbox
 
+<img alt="Checkbox example" src="https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_checkbox.png?raw=true" width="306" height="44">
+
 ```python
 import streamlit as st
 from streamlit_gov_uk_components import gov_uk_checkbox
@@ -24,13 +26,6 @@ selected = gov_uk_checkbox(
     default=True,                         # Initially selected?
 )
 ```
-
----
-
-<img alt="Checkbox example" src="https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_checkbox.png?raw=true" width="306" height="44">
-
----
-
 
 ### Smaller checkbox
 
