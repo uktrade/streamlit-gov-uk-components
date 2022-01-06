@@ -47,8 +47,8 @@ STREAMLIT_GOV_UK_COMPONENTS_DEV=True streamlit run example_checkbox.py
 
 ```bash
 cd streamlit_gov_uk_components/frontend_checkbox
-npm install
-npm run start
+yarn install
+yarn run start
 ```
 
 ## Releasing to PyPI
@@ -57,8 +57,8 @@ npm run start
 
    ```bash
    cd streamlit_gov_uk_components/frontend_checkbox
-   npm install
-   npm run build
+   yarn install
+   yarn run build
    ```
 
 2. Ensure that there is a line in `MANIFEST.in` for each frontend component.
