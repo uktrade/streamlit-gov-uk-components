@@ -92,5 +92,5 @@ yarn run start
 
    ```
    pip install build twine
-   rm -r -f build dist && python3 -m build && python -m twine upload dist/*
+   rm -r -f build dist && python -m build && python -m twine upload dist/*
    ```
