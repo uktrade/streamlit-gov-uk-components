@@ -32,6 +32,21 @@ selected = gov_uk_checkbox(
 ---
 
 
+### Smaller checkbox
+
+```python
+import streamlit as st
+from streamlit_gov_uk_components import gov_uk_checkbox_small
+
+selected = gov_uk_checkbox_small(
+    label="Waste from animal carcasses",  # Label shown in browser
+    id="waste-from-animal-carcases",      # ID of checkbox in HTML
+    key="waste-from-animal-carcases",     # Streamlit component instance key
+    default=True,                         # Initially selected?
+)
+```
+
+
 ## Local development
 
 The examples serve as reasonable mini Streamlit applications that allow development of the components themselves. Two terminal session are typically needed.
