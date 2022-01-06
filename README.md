@@ -78,5 +78,5 @@ npm run start
 
    ```
    pip install build twine
-   rm -r -f build dist && python3 -m build && python3 -m twine upload dist/*
+   rm -r -f build dist && python3 -m build && python -m twine upload dist/*
    ```
