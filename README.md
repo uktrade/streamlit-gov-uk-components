@@ -23,5 +23,5 @@ selected = gov_uk_checkbox(
     key="waste-from-animal-carcases",     # Streamlit component instance key
     default=True,                         # Initially selected?
 )
-st.markdown("Selected: %s" % selected)    # Show state in browser if needed
+st.markdown("Selected: %s" % selected)    # Show state in browser
 ```
