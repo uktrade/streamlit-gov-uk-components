@@ -25,3 +25,5 @@ selected = gov_uk_checkbox(
 )
 st.markdown("Selected: %s" % selected)    # Show state in browser
 ```
+
+![Checkbox example](https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_checkbox.png?raw=true)
