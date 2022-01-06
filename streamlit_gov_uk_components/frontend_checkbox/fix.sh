@@ -4,6 +4,7 @@
 # https://github.com/facebook/create-react-app/issues/10356
 
 sed -i '' -e 's|import { Table, Vector } from "apache-arrow";|import { Vector } from "apache-arrow/vector";import { Table } from "apache-arrow/table";|g' ./node_modules/streamlit-component-lib/dist/ArrowTable.d.ts
+sed -i '' -e 's|import { Table, Type } from "apache-arrow";||g' ./node_modules/streamlit-component-lib/dist/ArrowTable.js
 
 mv ./node_modules/apache-arrow/ipc/reader.mjs ./node_modules/apache-arrow/ipc/reader.js
 mv ./node_modules/apache-arrow/util/buffer.mjs ./node_modules/apache-arrow/util/buffer.js
