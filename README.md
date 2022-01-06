@@ -28,4 +28,4 @@ st.markdown("Selected: %s" % selected)    # Show state in browser
 
 ---
 
-<img alt="Checkbox example" src="https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_checkbox.png?raw=true" width="315" height="261">
+<img alt="Checkbox example" src="https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_checkbox.png?raw=true" width="306" height="44">
