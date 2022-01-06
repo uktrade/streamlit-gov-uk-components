@@ -43,6 +43,10 @@ selected = gov_uk_checkbox_small(
 )
 ```
 
+## Example apps
+
+Each `example_*.py` file in ths repository is a small Streamlit app the shows how a component can be used.
+
 
 ## Local development
 
