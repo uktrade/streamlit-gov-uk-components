@@ -3,8 +3,18 @@ from streamlit_gov_uk_components import gov_uk_checkbox
 
 st.subheader("Checkbox")
 
-selected = gov_uk_checkbox("Waste from animal carcasses", "animal-waste", default=True)
-st.markdown("Selected: %s" % selected)
+selected_waste_from_animal_carcases = gov_uk_checkbox(
+    label="Waste from animal carcasses",
+    id="waste-from-animal-carcases",
+    key="waste-from-animal-carcases",
+    default=True,
+)
+st.markdown("Selected: %s" % selected_waste_from_animal_carcases)
 
-selected = gov_uk_checkbox("Waste from mines or quarries", "mines-waste", default=False)
-st.markdown("Selected: %s" % selected)
+selected_waste_from_mines_or_quarries = gov_uk_checkbox(
+    label="Waste from mines or quarries",
+    id="waste-from-mines-or-quarries",
+    key="waste-from-mines-or-quarries",
+    default=False,
+)
+st.markdown("Selected: %s" % selected_waste_from_mines_or_quarries)
