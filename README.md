@@ -51,7 +51,7 @@ npm install
 npm run start
 ```
 
-## Release to PyPI
+## Releasing to PyPI
 
 1. Ensure that each frontend component has been built
 
