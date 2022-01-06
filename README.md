@@ -58,6 +58,7 @@ yarn run start
    ```bash
    cd streamlit_gov_uk_components/frontend_checkbox
    yarn install
+   ./fix.sh
    yarn run build
    ```
 

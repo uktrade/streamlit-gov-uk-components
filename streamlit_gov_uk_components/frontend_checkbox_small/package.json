@@ -16,6 +16,9 @@
     "streamlit-component-lib": "*",
     "typescript": "*"
   },
+  "resolutions": {
+    "**/apache-arrow": "6.0.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
