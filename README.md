@@ -34,10 +34,10 @@ import streamlit as st
 from streamlit_gov_uk_components import gov_uk_checkbox_small
 
 selected = gov_uk_checkbox_small(
-    label="Waste from animal carcasses",  # Label shown in browser
-    id="waste-from-animal-carcases",      # ID of checkbox in HTML
-    key="waste-from-animal-carcases",     # Streamlit component instance key
-    default=True,                         # Initially selected?
+    label="HM Revenue and Customs (HMRC)",  # Label shown in browser
+    id="hmrc",                              # ID of checkbox in HTML
+    key="hmrc",                             # Streamlit component instance key
+    default=True,                           # Initially selected?
 )
 ```
 
