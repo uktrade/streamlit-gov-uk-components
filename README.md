@@ -79,7 +79,7 @@ yarn run start
 
 3. Bump the version inside `setup.py`
 
-4. Commit with a Conventional Commit message, and tag the commit
+4. Commit with a Conventional Commit message with the bumped version, tag the commit with the bumped version, and push to GitHub.
 
    ```bash
    git add setup.py
