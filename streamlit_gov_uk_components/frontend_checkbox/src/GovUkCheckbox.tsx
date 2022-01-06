@@ -5,14 +5,7 @@ import {
 } from "streamlit-component-lib"
 import React, { ReactNode } from "react"
 
-interface State {
-  numClicks: number
-  isFocused: boolean
-}
-
-class GovUkCheckbox extends StreamlitComponentBase<State> {
-  public state = { numClicks: 0, isFocused: false }
-
+class GovUkCheckbox extends StreamlitComponentBase {
   public render = (): ReactNode => {
     const label = this.props.args["label"]
     const id = this.props.args["id"]
