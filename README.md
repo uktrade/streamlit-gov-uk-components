@@ -27,6 +27,8 @@ selected = gov_uk_checkbox(
 )
 ```
 
+[Example Streamlit application using a checkbox](./example_checkbox.py)
+
 ### Smaller checkbox
 
 <img alt="Smaller checkbox example" src="https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_checkbox_small.png?raw=true" width="342" height="30">
@@ -43,9 +45,7 @@ selected = gov_uk_checkbox_small(
 )
 ```
 
-## Example apps
-
-Each `example_*.py` file in ths repository is a small Streamlit app the shows how a component can be used.
+[Example Streamlit application using a smaller checkbox](./example_checkbox_small.py)
 
 
 ## Local development
