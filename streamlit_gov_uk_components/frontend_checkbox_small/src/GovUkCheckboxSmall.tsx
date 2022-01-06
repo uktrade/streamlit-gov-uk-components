@@ -5,7 +5,7 @@ import {
 } from "streamlit-component-lib"
 import React, { ReactNode } from "react"
 
-class GovUkCheckbox extends StreamlitComponentBase {
+class GovUkCheckboxSmall extends StreamlitComponentBase {
   public render = (): ReactNode => {
     const label = this.props.args["label"]
     const id = this.props.args["id"]
@@ -34,4 +34,4 @@ class GovUkCheckbox extends StreamlitComponentBase {
   }
 }
 
-export default withStreamlitConnection(GovUkCheckbox)
+export default withStreamlitConnection(GovUkCheckboxSmall)

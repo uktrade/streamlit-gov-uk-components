@@ -1,10 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import GovUkCheckbox from "./GovUkCheckbox"
+import GovUkCheckboxSmall from "./GovUkCheckboxSmall"
 
 ReactDOM.render(
   <React.StrictMode>
-    <GovUkCheckbox />
+    <GovUkCheckboxSmall />
   </React.StrictMode>,
   document.getElementById("root")
 )
