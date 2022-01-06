@@ -50,3 +50,33 @@ cd streamlit_gov_uk_components/frontend_checkbox
 npm install
 npm run start
 ```
+
+## Release to PyPI
+
+1. Ensure that each frontend component has been built
+
+   ```bash
+   cd streamlit_gov_uk_components/frontend_checkbox
+   npm install
+   npm run build
+   ```
+
+2. Ensure that there is a line in `MANIFEST.in` for each frontend component.
+
+3. Bump the version inside `setup.py`
+
+4. Commit with a Conventional Commit message, and tag the commit
+
+   ```bash
+   git add setup.py
+   git commit -m "build(release): v0.0.4"
+   git tag v0.0.4
+   git push origin main --tags
+   ```
+
+5. Build and release to PyPI
+
+   ```
+   pip install build twine
+   rm -r -f build dist && python3 -m build && python3 -m twine upload dist/*
+   ```
