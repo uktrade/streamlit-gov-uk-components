@@ -11,7 +11,7 @@ class GovUkCheckboxSmall extends StreamlitComponentBase {
     const id = this.props.args["id"]
 
     return (
-      <div className="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div className="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
         <div className="govuk-checkboxes__item">
           <input
             disabled={this.props.disabled}
