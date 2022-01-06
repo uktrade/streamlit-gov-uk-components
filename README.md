@@ -48,6 +48,7 @@ STREAMLIT_GOV_UK_COMPONENTS_DEV=True streamlit run example_checkbox.py
 ```bash
 cd streamlit_gov_uk_components/frontend_checkbox
 yarn install
+./fix.sh
 yarn run start
 ```
 
