@@ -46,7 +46,7 @@ STREAMLIT_GOV_UK_COMPONENTS_DEV=True streamlit run example_checkbox.py
 ... and one to run a development server that automatically recompiles and serves the HTML and Javascript of the front end of each component.
 
 ```bash
-cd streamlist_gov_uk_components/frontend_checkbox
+cd streamlit_gov_uk_components/frontend_checkbox
 npm install
 npm run start
 ```
