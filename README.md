@@ -42,6 +42,29 @@ selected = gov_uk_checkbox_small(
 ```
 
 
+### Checkbox list ([example](./example_checkbox_list.py))
+
+```python
+from streamlit_gov_uk_components import gov_uk_checkbox_list
+
+selected = gov_uk_checkbox_list(
+    # Dictionary of (id: label) pairs
+    options={
+        "waste-from-animal-carcusses": "Waste from animal carcasses",
+        "waste-from-mines-or-quarries": "Waste from mines or quarries",
+        "farm-or-agricultural-waste": "Farm or agricultural wastes",
+    },
+    key="waste",
+    # Dictionary of (id,initially selected) pairs
+    default={
+        "waste-from-animal-carcusses": True,
+        "waste-from-mines-or-quarries": False,
+        "farm-or-agricultural-waste": False,
+    },
+)
+```
+
+
 ## Local development
 
 The examples serve as reasonable mini Streamlit applications that allow development of the components themselves. Two terminal session are typically needed.

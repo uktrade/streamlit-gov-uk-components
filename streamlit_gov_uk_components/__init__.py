@@ -16,6 +16,12 @@ def gov_uk_checkbox(label, id, key=None, default=False):
     return _gov_uk_checkbox(label=label, id=id, key=key, default=default)
 
 
+_gov_uk_checkbox_list = components.declare_component("gov_uk_checkbox_list", **_component_options('frontend_checkbox_list'))
+
+def gov_uk_checkbox_list(options, key=None, default=False):
+    return _gov_uk_checkbox_list(options=options, key=key, default=default)
+
+
 _gov_uk_checkbox_small = components.declare_component("gov_uk_checkbox_small", **_component_options('frontend_checkbox_small'))
 
 def gov_uk_checkbox_small(label, id, key=None, default=False):
