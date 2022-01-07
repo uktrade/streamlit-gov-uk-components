@@ -1,11 +1,23 @@
 import {
+  ComponentProps,
   Streamlit,
   StreamlitComponentBase,
   withStreamlitConnection,
 } from "streamlit-component-lib"
 import React, { ReactNode } from "react"
 
-class GovUkCheckbox extends StreamlitComponentBase {
+interface State {
+  selected: boolean
+}
+
+class GovUkCheckbox extends StreamlitComponentBase<State> {
+  public constructor(props: ComponentProps) {
+    super(props)
+
+    const selected = this.props.args["default"] as boolean
+    this.state = { selected }
+  }
+
   public render = (): ReactNode => {
     const label = this.props.args["label"]
     const id = this.props.args["id"]
@@ -15,8 +27,8 @@ class GovUkCheckbox extends StreamlitComponentBase {
         <div className="govuk-checkboxes__item">
           <input
             disabled={this.props.disabled}
-            defaultChecked={this.props.args["default"]}
-            onInput={this.onInput}
+            checked={this.state.selected}
+            onChange={this.onChange}
             className="govuk-checkboxes__input"
             id={id} name={id}
             type="checkbox"
@@ -29,8 +41,11 @@ class GovUkCheckbox extends StreamlitComponentBase {
     )
   }
 
-  private onInput = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    Streamlit.setComponentValue(event.target.checked)
+  private onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    const selected = event.target.checked;
+    this.setState({ selected }, () => {
+      Streamlit.setComponentValue(selected)
+    })
   }
 }
 
