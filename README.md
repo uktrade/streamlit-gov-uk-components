@@ -50,7 +50,7 @@ selected = gov_uk_checkbox_small(
 from streamlit_gov_uk_components import gov_uk_checkbox_list
 
 selected = gov_uk_checkbox_list(
-    # Tuple of (id, label) pairs
+    # Tuple of (ID, label) pairs
     options=(
         ("waste-from-animal-carcasses", "Waste from animal carcasses"),
         ("waste-from-mines-or-quarries", "Waste from mines or quarries"),
@@ -71,7 +71,7 @@ selected = gov_uk_checkbox_list(
 from streamlit_gov_uk_components import gov_uk_checkbox_small_list
 
 selected = gov_uk_checkbox_small_list(
-    # Dictionary of (id: label) pairs
+    # Tuple of (ID, label) pairs
     options=(
         ("hm-revenue-and-customs", "HM Revenue and Customs (HMRC)"),
         ("employment-tribunal", "Employment Tribunal"),
