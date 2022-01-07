@@ -89,7 +89,7 @@ yarn run start
 
 ## Releasing to PyPI
 
-1. Ensure that each frontend component has been built
+1. Ensure that each frontend component has been built. Each frontend component must be built, not just those that have changed, since the production builds of each are not checked into the repository.
 
    ```bash
    cd streamlit_gov_uk_components/frontend_checkbox
