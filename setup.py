@@ -8,7 +8,7 @@ def long_description():
 
 setuptools.setup(
     name='streamlit-gov-uk-components',
-    version='0.0.7',
+    version='0.0.8',
     author='Department for International Trade',
     author_email='sre@digital.trade.gov.uk',
     description='A collection of Streamlit components that use or are inspired by the GOV.UK Design System',
