@@ -57,7 +57,7 @@ selected = gov_uk_checkbox_list(
         "farm-or-agricultural-waste": "Farm or agricultural wastes",
     },
     key="waste",
-    # Dictionary of (id,initially selected) pairs
+    # Dictionary of (id: initially selected) pairs
     default={
         "waste-from-animal-carcusses": True,
         "waste-from-mines-or-quarries": False,
