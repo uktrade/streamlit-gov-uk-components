@@ -20,8 +20,8 @@ from streamlit_gov_uk_components import gov_uk_checkbox
 
 selected = gov_uk_checkbox(
     label="Waste from animal carcasses",  # Label shown in browser
-    id="waste-from-animal-carcases",      # ID of checkbox in HTML
-    key="waste-from-animal-carcases",     # Streamlit component instance key
+    id="waste-from-animal-carcasses",      # ID of checkbox in HTML
+    key="waste-from-animal-carcasses",     # Streamlit component instance key
     default=True,                         # Initially selected?
 )
 ```
@@ -58,7 +58,7 @@ selected = gov_uk_checkbox_list(
     ),
     key="waste",
     # Tuple of initially selected IDs
-    default=("waste-from-animal-carcusses",),
+    default=("waste-from-animal-carcasses",),
 )
 ```
 

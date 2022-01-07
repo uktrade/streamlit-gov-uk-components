@@ -5,8 +5,8 @@ st.subheader("Checkbox")
 
 selected_waste_from_animal_carcases = gov_uk_checkbox(
     label="Waste from animal carcasses",
-    id="waste-from-animal-carcases",
-    key="waste-from-animal-carcases",
+    id="waste-from-animal-carcasses",
+    key="waste-from-animal-carcasses",
     default=True,
 )
 st.markdown("Selected: %s" % selected_waste_from_animal_carcases)
