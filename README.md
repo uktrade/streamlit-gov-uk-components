@@ -44,6 +44,8 @@ selected = gov_uk_checkbox_small(
 
 ### Checkbox list ([example](./example_checkbox_list.py))
 
+<img alt="Smaller checkbox example" src="https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_checkbox_list.png?raw=true" width="310" height="148">
+
 ```python
 from streamlit_gov_uk_components import gov_uk_checkbox_list
 
