@@ -50,19 +50,15 @@ selected = gov_uk_checkbox_small(
 from streamlit_gov_uk_components import gov_uk_checkbox_list
 
 selected = gov_uk_checkbox_list(
-    # Dictionary of (id: label) pairs
-    options={
-        "waste-from-animal-carcusses": "Waste from animal carcasses",
-        "waste-from-mines-or-quarries": "Waste from mines or quarries",
-        "farm-or-agricultural-waste": "Farm or agricultural wastes",
-    },
+    # Tuple of (id, label) pairs
+    options=(
+        ("waste-from-animal-carcusses", "Waste from animal carcasses"),
+        ("waste-from-mines-or-quarries", "Waste from mines or quarries"),
+        ("farm-or-agricultural-waste", "Farm or agricultural wastes"),
+    ),
     key="waste",
-    # Dictionary of (id: initially selected) pairs
-    default={
-        "waste-from-animal-carcusses": True,
-        "waste-from-mines-or-quarries": False,
-        "farm-or-agricultural-waste": False,
-    },
+    # Tuple of initially selected IDs
+    default=("waste-from-animal-carcusses",),
 )
 ```
 
@@ -76,20 +72,15 @@ from streamlit_gov_uk_components import gov_uk_checkbox_small_list
 
 selected = gov_uk_checkbox_small_list(
     # Dictionary of (id: label) pairs
-    options={
-        "hm-revenue-and-customs": "HM Revenue and Customs (HMRC)",
-        "employment-tribunal": "Employment Tribunal",
-        "ministry-of-defence": "Ministry of Defence",
-        "department-for-transport": "Department for Transport",
-    },
+    options=(
+        ("hm-revenue-and-customs", "HM Revenue and Customs (HMRC)"),
+        ("employment-tribunal", "Employment Tribunal"),
+        ("ministry-of-defence", "Ministry of Defence"),
+        ("department-for-transport", "Department for Transport"),
+    ),
     key="waste",
-    # Dictionary of (id: initially selected) pairs
-    default={
-        "hm-revenue-and-customs": True,
-        "employment-tribunal": False,
-        "ministry-of-defence": False,
-        "department-for-transport": False,
-    },
+    # Tuple of initially selected IDs
+    default=("hm-revenue-and-customs",),
 )
 ```
 

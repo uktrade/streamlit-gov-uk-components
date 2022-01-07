@@ -7,25 +7,25 @@ import {
 import React, { ReactNode } from "react"
 
 interface State {
-  selected: { [key: string]: boolean }
+  selected: ReadonlySet<string>
 }
 
 class GovUkCheckboxList extends StreamlitComponentBase<State> {
   public constructor(props: ComponentProps) {
     super(props)
 
-    const selected = this.props.args["default"] as { [key: string]: boolean }
+    const selected = new Set<string>(this.props.args["default"])
     this.state = { selected }
   }
 
   public render = (): ReactNode => {
     return (
       <div className="govuk-checkboxes" data-module="govuk-checkboxes">
-        {Object.entries(this.props.args["options"]).map(([id, label]: [string, any], index) =>
+        {this.props.args["options"].map(([id, label]: [string, any]) =>
           <div className="govuk-checkboxes__item" key={id}>
             <input
               disabled={this.props.disabled}
-              checked={this.state.selected[id]}
+              checked={this.state.selected.has(id)}
               onChange={(e) => this.onChange(id, e)}
               className="govuk-checkboxes__input"
               id={id} name={id}
@@ -43,9 +43,14 @@ class GovUkCheckboxList extends StreamlitComponentBase<State> {
   private onChange = (id: string, event: React.ChangeEvent<HTMLInputElement>): void => {
     const selected = event.target.checked;
     this.setState(prevState => {
-      selected: Object.assign(prevState.selected, {[id]: selected})      
+        const newSet = new Set(prevState.selected)
+        newSet[selected ? 'add' : 'delete'](id)
+        return {selected: newSet}
     }, () => {
-      Streamlit.setComponentValue(this.state.selected)
+      // To be tidy, always return selected options in the order passed in options
+      Streamlit.setComponentValue(this.props.args["options"].filter(([id, label]: [string, any]) =>
+        this.state.selected.has(id)
+      ).map(([id, label]: [string, any]) => id))
     })
   }
 }
