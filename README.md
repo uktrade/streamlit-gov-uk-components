@@ -67,6 +67,33 @@ selected = gov_uk_checkbox_list(
 ```
 
 
+### Smaller checkbox list ([example](./example_checkbox_small_list.py))
+
+<img alt="Smaller checkbox list example" src="https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_checkbox_list_small.png?raw=true" width="346" height="164">
+
+```python
+from streamlit_gov_uk_components import gov_uk_checkbox_small_list
+
+selected = gov_uk_checkbox_small_list(
+    # Dictionary of (id: label) pairs
+    options={
+        "hm-revenue-and-customs": "HM Revenue and Customs (HMRC)",
+        "employment-tribunal": "Employment Tribunal",
+        "ministry-of-defence": "Ministry of Defence",
+        "department-for-transport": "Department for Transport",
+    },
+    key="waste",
+    # Dictionary of (id: initially selected) pairs
+    default={
+        "hm-revenue-and-customs": True,
+        "employment-tribunal": False,
+        "ministry-of-defence": False,
+        "department-for-transport": False,
+    },
+)
+```
+
+
 ## Local development
 
 The examples serve as reasonable mini Streamlit applications that allow development of the components themselves. Two terminal session are typically needed.
