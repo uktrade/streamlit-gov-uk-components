@@ -52,7 +52,7 @@ from streamlit_gov_uk_components import gov_uk_checkbox_list
 selected = gov_uk_checkbox_list(
     # Tuple of (id, label) pairs
     options=(
-        ("waste-from-animal-carcusses", "Waste from animal carcasses"),
+        ("waste-from-animal-carcasses", "Waste from animal carcasses"),
         ("waste-from-mines-or-quarries", "Waste from mines or quarries"),
         ("farm-or-agricultural-waste", "Farm or agricultural wastes"),
     ),
