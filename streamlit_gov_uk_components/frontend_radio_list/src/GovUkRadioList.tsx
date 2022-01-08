@@ -42,7 +42,6 @@ class GovUkRadioList extends StreamlitComponentBase<State> {
 
   private onChange = (id: string, event: React.ChangeEvent<HTMLInputElement>): void => {
     const selected = event.target.value;
-    console.log('CHANGE', selected)
     this.setState(prevState => {
         return {selected: selected}
     }, () => {
