@@ -32,3 +32,9 @@ _gov_uk_checkbox_small_list = components.declare_component("gov_uk_checkbox_smal
 
 def gov_uk_checkbox_small_list(options, key=None, default=()):
     return tuple(_gov_uk_checkbox_small_list(options=options, key=key, default=default))
+
+
+_gov_uk_radio_list = components.declare_component("gov_uk_radio_list", **_component_options('frontend_radio_list'))
+
+def gov_uk_radio_list(options, id, key=None, default=None):
+    return _gov_uk_radio_list(options=options, id=id, key=key, default=default)

@@ -85,6 +85,28 @@ selected = gov_uk_checkbox_small_list(
 ```
 
 
+### Radio list ([example](./example_radio_list.py))
+
+<img alt="Radio list example" src="https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_radio_list.png?raw=true" width="197" height="197">
+
+```python
+from streamlit_gov_uk_components import gov_uk_radio_list
+
+selected = gov_uk_radio_list(
+    # Tuple of (ID, label) pairs
+    options=(
+        ("england", "England"),
+        ("scotland", "Scotland"),
+        ("wales", "Wales"),
+        ("northern-ireland", "Northern Ireland"),
+    ),
+    id="where-do-you-live",   # Base of HTML IDs for radios
+    key="where-do-you-live",  # Streamlit component instance key
+    default="england",        # Initially selected ID
+)
+```
+
+
 ## Local development
 
 The examples serve as reasonable mini Streamlit applications that allow development of the components themselves. Two terminal session are typically needed.

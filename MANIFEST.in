@@ -2,3 +2,4 @@ recursive-include streamlit_gov_uk_components/frontend_checkbox/build *
 recursive-include streamlit_gov_uk_components/frontend_checkbox_list/build *
 recursive-include streamlit_gov_uk_components/frontend_checkbox_small/build *
 recursive-include streamlit_gov_uk_components/frontend_checkbox_small_list/build *
+recursive-include streamlit_gov_uk_components/frontend_radio_list/build *
