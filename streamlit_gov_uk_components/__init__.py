@@ -38,3 +38,9 @@ _gov_uk_radio_list = components.declare_component("gov_uk_radio_list", **_compon
 
 def gov_uk_radio_list(options, id, key=None, default=None):
     return _gov_uk_radio_list(options=options, id=id, key=key, default=default)
+
+
+_gov_uk_radio_small_list = components.declare_component("gov_uk_radio_small_list", **_component_options('frontend_radio_small_list'))
+
+def gov_uk_radio_small_list(options, id, key=None, default=None):
+    return _gov_uk_radio_small_list(options=options, id=id, key=key, default=default)
