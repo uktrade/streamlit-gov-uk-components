@@ -9,7 +9,7 @@ A collection of Streamlit components that use or are inspired by the GOV.UK Desi
 pip install streamlit-gov-uk-components
 ```
 
-## Components
+## Available components
 
 - [Checkbox](#checkbox-example)
 - [Smaller checkbox](#smaller-checkbox-example)
