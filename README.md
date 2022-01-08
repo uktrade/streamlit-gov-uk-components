@@ -11,12 +11,12 @@ pip install streamlit-gov-uk-components
 
 ## Components
 
-- (Checkbox)[#checkbox-example]
-- (Smaller checkbox)[#smaller-checkbox-example]
-- (Checkbox list)[#checkbox-list-example]
-- (Smaller checkbox list)[#smaller-checkbox-list-example]
-- (Radio list)(#radio-list-example)
-- (Smaller radio list)(#smaller-radio-list-example)
+- [Checkbox](#checkbox-example)
+- [Smaller checkbox](#smaller-checkbox-example)
+- [Checkbox list](#checkbox-list-example)
+- [Smaller checkbox list](#smaller-checkbox-list-example)
+- [Radio list](#radio-list-example)
+- [Smaller radio list](#smaller-radio-list-example)
 
 
 ## Usage
