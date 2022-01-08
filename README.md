@@ -41,7 +41,6 @@ selected = gov_uk_checkbox_small(
 )
 ```
 
-
 ### Checkbox list ([example](./example_checkbox_list.py))
 
 <img alt="Smaller checkbox example" src="https://github.com/uktrade/streamlit-gov-uk-components/blob/main/example_checkbox_list.png?raw=true" width="310" height="148">
@@ -61,7 +60,6 @@ selected = gov_uk_checkbox_list(
     default=("waste-from-animal-carcasses",),
 )
 ```
-
 
 ### Smaller checkbox list ([example](./example_checkbox_small_list.py))
 
@@ -83,7 +81,6 @@ selected = gov_uk_checkbox_small_list(
     default=("hm-revenue-and-customs",),
 )
 ```
-
 
 ### Radio list ([example](./example_radio_list.py))
 
@@ -145,6 +142,7 @@ yarn install
 ./fix.sh
 yarn run start
 ```
+
 
 ## Releasing to PyPI
 
