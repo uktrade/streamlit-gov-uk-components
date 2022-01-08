@@ -11,12 +11,9 @@ selected = gov_uk_radio_list(
         ("wales", "Wales"),
         ("northern-ireland", "Northern Ireland"),
     ),
-    # ID of component
-    id="where-do-you-live",
-    # ID of component
-    key="where-do-you-live",
-    # Initially selected ID
-    default="england",
+    id="where-do-you-live",   # Base of HTML IDs for radios
+    key="where-do-you-live",  # Streamlit component instance key
+    default="england",        # Initially selected ID
 )
 
 st.markdown(f"Selected: {selected}")
